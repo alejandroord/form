@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --main-bg-color: #fdfffa;
+  --green: #596d48;
+}
+@font-face {
+  font-family: "titleFont";
+  src: url("Norse-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  font-family: "Roboto";
+}
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+button {
+  background-color: var(--green);
+  outline: none;
+  color: white;
+  height: 45px;
+  width: 150px;
+  border-radius: 3px;
+  border: 0px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+input {
+  margin: 3px !important;
+  width: 250px;
+  height: 30px;
+  border-color: gray;
+  border: 1px solid dimgray;
+  border-radius: 5px;
+  outline: none !important;
+}
+input:focus {
+  outline: none !important;
+  border: 1.5px solid #3498db;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
+}
+
+.invalid:invalid {
+  outline: none !important;
+  border: 1.5px solid red;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s ease;
+}
+
+.subtitle {
+  margin-left: 30px;
+}
+.labelForm {
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.containerForm {
+  display: flex;
+  margin-top: 35px;
+  margin-left: 5px;
+}
+.login {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.formItem {
+  margin-left: 20px;
+}
+
+.form {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.instructions {
+  margin-top: 10%;
+  padding: 20px;
+}
+.text {
+  font-family: "titleFont";
+  font-size: 20px;
+  height: 100px;
+  margin-top: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text > img {
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.generalContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+
+  flex: 2;
+  height: 100%;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contentContainer {
+  background-color: var(--main-bg-color);
+  flex: 3;
+}
+.copyright {
+  margin-top: auto;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 10;
+  color: white;
+  text-align: center;
+}
+.copyright a {
+  color: white;
+  text-decoration: underline;
+}
